@@ -6,14 +6,22 @@ import java.util.List;
 public class Caisse {
 
 	private String nom;
+	/** Poids de l'item mini*/
+	private int poidsItemMin;
+
+	/** Poids de l'item maxi
+	 * */
+	private int poidsItemMax;
 	private List<Item> items;
 
 	/** Constructeur
 	 * @param nom
 	 */
-	public Caisse(String nom) {
+	public Caisse(String nom,int pdsMini, int pdsMaxi) {
 		super();
 		this.nom = nom;
+		this.poidsItemMin=pdsMini;
+		this.poidsItemMax = pdsMaxi;
 		this.items = new ArrayList<>();
 	}
 

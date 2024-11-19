@@ -9,9 +9,9 @@ public class Inventaire {
 
 	public Inventaire() {
 		caisses = new ArrayList<>();
-		caisses.add(new Caisse("Petits objets"));
-		caisses.add(new Caisse("Moyens objets"));
-		caisses.add(new Caisse("Grands objets"));
+		caisses.add(new Caisse("Petits objets",0,5));
+		caisses.add(new Caisse("Moyens objets",5,20));
+		caisses.add(new Caisse("Grands objets",20,100));
 	}
 
 	public void addItem(Item item) {
